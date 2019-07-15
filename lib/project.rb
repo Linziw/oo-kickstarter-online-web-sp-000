@@ -16,9 +16,4 @@ backer.backed_projects << self
     @backers << backer
   end
   
- 
-  
-  
-    
-  
-end
+ end
