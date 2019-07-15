@@ -7,7 +7,7 @@ class Project
   end
   
   def add_backer(backer)
-    @backers << backer
+    @backers << Backer.find_by_name(backer)
   end
   
   
