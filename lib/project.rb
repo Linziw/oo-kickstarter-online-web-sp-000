@@ -15,7 +15,7 @@ class Project
   end
   
    def self.find_by_title(title)
-    @@all.find {|title| .name == backer}
+    @@all.find {|title| title.name == title}
   end
   
   
