@@ -3,7 +3,7 @@ require "pry"
 class Backer
   @@all = []
   
-  attr_accessor :name, :backed_projects
+  attr_accessor :name, :backed_projects, :backer
   
   def initialize(name)
     @name=name
@@ -12,8 +12,10 @@ class Backer
   end
   
   def back_project(project)
+    project.backer = self
     @backed_projects << project
-    #binding.pry
+    binding.pry
+    
   end
   
   def self.find_by_name(backer)
