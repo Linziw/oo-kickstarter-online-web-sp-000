@@ -14,9 +14,7 @@ class Project
     @backers << backer
   end
   
-   def self.find_by_project(project)
-    @@all.find {|project| project.title == project}
-  end
+ 
   
   
     
