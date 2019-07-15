@@ -13,7 +13,7 @@ class Backer
     @backed_projects << project
   end
   
-  def find_by_name(backer)
+  def self.find_by_name(backer)
     @@all.find {|backer| backer.name == backer}
   end
     
