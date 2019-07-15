@@ -13,7 +13,7 @@ class Backer
   
   def back_project(project)
     @backed_projects << project
-    #binding.pry
+    binding.pry
   end
   
   def self.find_by_name(backer)
